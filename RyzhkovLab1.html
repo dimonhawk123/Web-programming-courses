@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Рыжков</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            h2{
+                margin:7px auto;
+                font-size: 20pt;
+                font-weight: 200;
+                text-align: center;                
+            }
+            body{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;               
+            }
+            .container{
+                display: flex;
+                flex-direction: column;                
+                min-height:100vh;
+            }
+            header{
+                color:#648880;
+                background-color: #293F50;
+                padding: 25px 0;
+                flex-grow: 0;
+            }
+            article{                
+                margin: 0 15%;
+                font-size: 14pt;                
+                flex-grow: 1;
+            }           
+            footer{                
+                padding: 20px;
+                color:#648880;
+                background-color: #293F50;                
+                flex-grow: 0;
+            }
+            .main_content{
+                text-indent: 1cm;
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h2>Южно-Уральский государственный университет</h2>
+                <h2>Кафедра информационно-аналитического обеспечения управления в социальных и экономических системах</h2>
+                <h2>Рыжков Дмитрий Витальевич</h2>
+            </header>
+
+            <article>
+                <p class="main_content">Меня зовут Дмитрий. Я родился в городе Челябинске в 1997 году. 
+                    По знаку зодиака я овен. Учился в начальной школе номер 477, затем в лицее номер 35. 
+                    Я увлекаюсь спортом. Долгое время занимался плаванием, сейчас хожу в спорт зал 
+                    и интересуюсь йогой. Играю на гитаре. 
+                </p>
+                <p class="main_content">После школы планировал поступать на энергетический
+                    факультет, но в крайний день комиссии передумал и подал документы
+                    на приборостроительный факультет, кафедра автоматики и управления. 
+                    Три года подряд мне нравилась учёба, я считал, что свяжу свою жизнь с электроникой. 
+                    На четвёртом курсе понял, что мне больше нравится программирование и что <b>нужно что-то менять</b>. 
+                    В магистратуру пошёл на направление <em>"информатика и вычислительная техника"</em>.  </p>
+                <p class="main_content"> Увлекаюсь программированием. Знаю языки C/C++, Python, МЭК. 
+                    Сейчас изучаю web-программирование.<br />
+                    <b>Планы на будущее следующие: </b>
+                    <ul>
+                        <li>Освоить HTML, CSS, JS</li>
+                        <li>Познакомиться с тонкостями дизайна</li>
+                        <li>Устроиться на работу web-разработчиков</li>
+                    </ul>
+                </p>
+            </article>
+
+            <footer>
+                <div class="copyright">&copyСтраница пренадлежит Рыжову Дмитрию</div>
+            </footer>
+        </div>
+    </body>
+</html>

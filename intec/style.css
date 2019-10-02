@@ -8,8 +8,7 @@ body{
 .upper_header, footer {
     background-color: #094440;
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: nowrap; */
+    flex-direction: row;    
     padding: 5px 10%;
 }
 .upper_header > div {
@@ -19,7 +18,7 @@ body{
 .upper_header  div a {
     color: #759D80;
 }
-#fourth {
+.upper_header div:nth-child(4){
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
@@ -75,9 +74,8 @@ h2, h3, h4 {
 .footnote {
     margin-left: 30px;
     border-left: 4px solid #8FC294;
-    padding-left: 10px;
+    padding: 10px;
 }
-
 .aside_block {
     background-color: #D7DDD1;    
     padding: 20px 35px 20px 20px;
@@ -86,10 +84,10 @@ h2, h3, h4 {
 aside dl {
     margin: 0;
 }
-dd {
+aside dd {
     white-space: nowrap;
 }
-dt {
+aside dt {
     font-weight: bold;
 }
 .aside_ref{
@@ -99,26 +97,23 @@ dt {
 .aside_ref:hover{
     text-decoration: underline;
 }
-.text_ref {
-    color:#8FC294; 
+.text_ref {    
+    color:rgb(124, 170, 128); 
     text-decoration: none;
+    font-weight: bold;
 }
 .text_ref:hover {
     text-decoration: underline;
 }
 .date_of_section{
-    margin: 0;
+    margin: 2px 0 0 0;
 }
-.point_list {
-    margin-left: 30px;
-    list-style-position: inside;
+.list {
+    margin-left: 44px;    
     padding:0;
 }
-
-li {
-
-}
 footer {
+    margin-top: 20px;
     padding: 20px 10%;
 }
 footer > div {
@@ -139,4 +134,3 @@ footer div:last-child {
     flex:1;
     text-align: end;    
 }
-

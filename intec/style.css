@@ -1,3 +1,136 @@
-* {
+* { 
     box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.upper_header, footer {
+    background-color: #094440;
+    display: flex;
+    flex-direction: row;    
+    padding: 5px 10%;
+}
+.upper_header > div {
+    margin-right: 5px;
+    color: white;
+}
+.upper_header  div a {
+    color: #759D80;
+}
+.upper_header div:nth-child(4){
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.middle_header {
+    background-color: #01855E;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 10%;
+}
+.middle_header div:first-child {
+    font-size: 24pt;
+}
+.middle_header div:last-child {
+    display:flex;
+    align-items: center;
+}
+.middle_header > div {
+    color: white;
+    margin-right: 20px;
+}
+.lower_header {
+    background: linear-gradient(90deg, #8FC294, #6DAB80);
+    padding: 10px 10%;
+}
+.lower_header > nav {
+    display: flex;    
+}
+.lower_header nav div {
+    margin-right: 25px;
+    font-weight: 600;
+}
+.ref {
+    color: #332C29;
+    text-decoration: none;
+}
+.ref:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.wrapper {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+}
+article {
+    margin-right: 20px;
+    padding-top: 20px;    
+}
+h2, h3, h4 {
+    margin: 0;
+}
+.footnote {
+    margin-left: 30px;
+    border-left: 4px solid #8FC294;
+    padding: 10px;
+}
+.aside_block {
+    background-color: #D7DDD1;    
+    padding: 20px 35px 20px 20px;
+    height: fit-content;
+}
+aside dl {
+    margin: 0;
+}
+aside dd {
+    white-space: nowrap;
+}
+aside dt {
+    font-weight: bold;
+}
+.aside_ref{
+    color: black;
+    text-decoration: none;
+}
+.aside_ref:hover{
+    text-decoration: underline;
+}
+.text_ref {    
+    color:rgb(124, 170, 128); 
+    text-decoration: none;
+    font-weight: bold;
+}
+.text_ref:hover {
+    text-decoration: underline;
+}
+.date_of_section{
+    margin: 2px 0 0 0;
+}
+.list {
+    margin-left: 44px;    
+    padding:0;
+}
+footer {
+    margin-top: 20px;
+    padding: 20px 10%;
+}
+footer > div {
+    margin-right: 35px;
+}
+footer a {    
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer h4, footer .copyright{
+    color:#8FC294;
+    margin: 0;
+}
+footer div:last-child {
+    flex:1;
+    text-align: end;    
 }

@@ -5,7 +5,7 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.upper_header {
+.upper_header, footer {
     background-color: #094440;
     display: flex;
     flex-direction: row;
@@ -50,7 +50,7 @@ body{
 }
 .lower_header nav div {
     margin-right: 25px;
-    
+    font-weight: 600;
 }
 .ref {
     color: #332C29;
@@ -65,29 +65,78 @@ body{
     display: flex;
     flex-direction: row;
 }
-.article {
+article {
     margin-right: 20px;
-    /* display: flex; */
-   flex-grow: 1;
+    padding-top: 20px;    
+}
+h2, h3, h4 {
+    margin: 0;
 }
 .footnote {
     margin-left: 30px;
     border-left: 4px solid #8FC294;
     padding-left: 10px;
 }
-/* aside {
-    background-color: #D7DDD1;
-    
-    flex-grow:1;
-} */
+
 .aside_block {
-    background-color: #D7DDD1;
-    /* display:flex; */
-    flex-grow: 1;
-    /* flex-basis: 400px; */
+    background-color: #D7DDD1;    
     padding: 20px 35px 20px 20px;
     height: fit-content;
+}
+aside dl {
+    margin: 0;
 }
 dd {
     white-space: nowrap;
 }
+dt {
+    font-weight: bold;
+}
+.aside_ref{
+    color: black;
+    text-decoration: none;
+}
+.aside_ref:hover{
+    text-decoration: underline;
+}
+.text_ref {
+    color:#8FC294; 
+    text-decoration: none;
+}
+.text_ref:hover {
+    text-decoration: underline;
+}
+.date_of_section{
+    margin: 0;
+}
+.point_list {
+    margin-left: 30px;
+    list-style-position: inside;
+    padding:0;
+}
+
+li {
+
+}
+footer {
+    padding: 20px 10%;
+}
+footer > div {
+    margin-right: 35px;
+}
+footer a {    
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer h4, footer .copyright{
+    color:#8FC294;
+    margin: 0;
+}
+footer div:last-child {
+    flex:1;
+    text-align: end;    
+}
+
